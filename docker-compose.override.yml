@@ -37,7 +37,7 @@ services:
 
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__Database=Host=catalogdb;Port=5432;Database=CatalogDb;Username=postgres;Password=postgres
+      - ConnectionStrings__Database=Host=ep-shiny-band-axy4qyz8-pooler.c-4.us-east-2.aws.neon.tech;Port=5432;Database=neondb;Username=neondb_owner;Password=npg_MO9KHuN5vIRe;SSL Mode=Require;Trust Server Certificate=true;
     ports:
       - "8080:8080"
     depends_on:
@@ -58,8 +58,8 @@ services:
 
     environment:
       - ASPNETCORE_ENVIRONMENT=Development
-      - ConnectionStrings__Database=Host=basketdb;Port=5432;Database=BasketDb;Username=postgres;Password=postgres
-      - ConnectionStrings__Redis=redis:6379
+      - ConnectionStrings__Database=Host=ep-dry-glitter-ax8rohis-pooler.c-4.us-east-2.aws.neon.tech;Port=5432;Database=neondb;Username=neondb_owner;Password=npg_yhtgSu3G0mjb;SSL Mode=Require;Trust Server Certificate=true;
+      - ConnectionStrings__Redis=microsmooth-form-wellcrafted-12155.db.redis.io:13962,user=default,password=k3VWyhiOBb46I1odmG9qFN0LQVvLAF3L,ssl=True,abortConnect=False
     ports:
       - "8082:8080"
     depends_on:
